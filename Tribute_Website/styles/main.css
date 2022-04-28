@@ -1,0 +1,18 @@
+/* Custom properties*/
+:root{
+    /*
+    Color scheme: based around: red, white, black, yellow, possibly split
+    between light and dark modes. 
+    */
+    --main-color-red: #FF0000;
+    --main-color-white: #FFFFFF;
+    --main-color-black: #000000;
+    --main-color-yellow: #FFFF00;
+}
+
+/* Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
