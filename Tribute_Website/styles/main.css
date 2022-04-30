@@ -1,18 +1,74 @@
 /* Custom properties*/
 :root{
-    /*
-    Color scheme: based around: red, white, black, yellow, possibly split
-    between light and dark modes. 
-    */
-    --main-color-red: #FF0000;
-    --main-color-white: #FFFFFF;
-    --main-color-black: #000000;
-    --main-color-yellow: #FFFF00;
+/*
+Color scheme: based around: red, white, black, yellow, possibly split
+between light and dark modes. 
+*/
+--main-color-red: #FF0000;
+--main-color-white: #FFFFFF;
+--main-color-black: #000000;
+--main-color-yellow: #FFFF00;
 }
 
 /* Base styles */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Base elements to be styled */
+html{
+    /* For easy calculation with "rem" units */
+    font-size: 10px;
+}
+
+body {
+
+
+    text-align: center;
+}
+
+
+main{
+
+}
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+blockquote {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+/* ID and class elements to be styled */
+
+#main {
+
+}
+
+#tribute-info{
+
+}
+
+#img-div{
+
 }
