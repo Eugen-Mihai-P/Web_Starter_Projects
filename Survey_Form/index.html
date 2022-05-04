@@ -16,19 +16,187 @@
 <body>
     <main id="main_body">
         <!-- Heading 1 -->
-        <section>
+        <header>
             <h1 id="title">Coding Survey</h1>
             <p id="description"> Submit your answer and find out how you compare to the average</p>
-        </section>
+        </header>
 
         <!-- Personal details -->
-        <section>
+        <section id="personal-info">
+            <h2>Personal Info</h2>
 
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+
+                    class="form-control"
+                    
+                    placeholder="Enter your full name"
+
+                    required/>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+
+                    class="form-control"
+                    
+                    placeholder="Enter your email"
+
+                    required/>
+                </div>
+
+                <div>
+                    <label for="age">Age</label>
+                    <input
+                    type="number"
+
+                    max="130"
+                    min="10"
+
+                    name="age"
+                    id="age"
+
+                    class="form-control"
+                    
+                    placeholder="Enter your full name"
+
+                    required/>
+                </div>
+            </form>
         </section>
 
         <!-- Survey questions -->
         <section>
+            <h2>Survey Questions</h2>
 
+            <form id="survey-form">
+                <div>
+                    <p>What option best describes your currrent role?</p>
+                    <select
+                        id="dropdown"
+                        name="role"
+                        class="form-control"
+                        required>
+
+                        <option value="student">Student</option>
+                        <option value="job">Employed (full time)</option>
+                        <option value="partTime">Part timer</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Of the following languages, which ones would you like to learn?</p>
+
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="C/C++"
+                        class="input-checkbox"
+                        />
+                        C/C++
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="Python"
+                        class="input-checkbox"
+                        />
+                        Python
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="Java"
+                        class="input-checkbox"
+                        />
+                        Java
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="Rust"
+                        class="input-checkbox"
+                        />
+                        Rust
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                        name="prefer"
+                        value="HtmlCSS"
+                        class="input-checkbox"
+                        />
+                        HTML/CSS
+                    </label>
+                </div>
+
+                <p>Of the following languages, which ones would you consider more desirable by employers?</p>
+
+                    <label>
+                        <input type="radio"
+                        name="C/C++"
+                        value="C/C++"
+                        class="input-radio"
+                        />
+                        C/C++
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                        name="Python"
+                        value="Python"
+                        class="input-radio"
+                        />
+                        Python
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                        name="Java"
+                        value="Java"
+                        class="input-radio"
+                        />
+                        Java
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                        name="Rust"
+                        value="Rust"
+                        class="input-radio"
+                        />
+                        Rust
+                    </label>
+                </div>
+
+                <div>
+                    <p>Anything you would like to be added?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter here">
+                    </textarea>
+                </div>   
+                
+                <div>
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
         </section>
     </main>
 </body>
